@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: inherit;
+}
+
+.site-header .logo {
+    height: 40px;
+}
+
+.site-header .title {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#mode-toggle {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
