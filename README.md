@@ -15,15 +15,8 @@ AgentVoice is a minimal demonstration of integrating ElevenLabs text-to-speech w
 
 ## Running the Web Page
 
-The repository contains a basic HTML file that calls the ElevenLabs API. After starting your local server, navigate to the page in your browser and interact with it.
+The repository contains a basic HTML file that calls the ElevenLabs API. After starting your local server, navigate to the page in your browser and interact with it. A floating button in the bottom-right corner opens a simple chatbot widget where you can send text or start a voice call.
 
 ## Configuring ElevenLabs Credentials
 
-Create a file named `.env` in the project root (or set environment variables in your hosting environment) with the following contents:
-
-```
-ELEVEN_API_KEY=your-api-key-here
-ELEVEN_VOICE_ID=your-voice-id
-```
-
-Replace the placeholder values with your ElevenLabs API key and the voice ID you want to use. The web page reads these values to authenticate requests to the ElevenLabs service.
+Open `script.js` and replace the `ELEVEN_API_KEY` and `ELEVEN_VOICE_ID` placeholders with your own ElevenLabs credentials. These values are required for the page to authenticate requests to the ElevenLabs service.
